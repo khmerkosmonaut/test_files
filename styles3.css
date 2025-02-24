@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px
+    border-radius: 5px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+}
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    background-image: url('Desktop/websitebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+   font-size: 48px;
+}
+h3 {
+   font-style: italic;
+}
+.textbox {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.gallery-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.front-photo {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.resized-photo {
+    width: 1000px;
+    height: autopx;
+    margin: 10px auto;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 60%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 60%);
+    text-align: center;
+    margin-left: -100px;
+}
+
+#aboutus  {
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.onlineshop {
+    width: 800px;
+    height: autopx;
+    border-radius: 10px;
+}
+.slideshow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #111;
+}
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+.scroll-container::-webkit-scrollbar-track {
+    background: #111;
+}
+.gallery-item{
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+}
+button.prev {left: -40px; }
+button.next {right: -40px;}
+button.hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

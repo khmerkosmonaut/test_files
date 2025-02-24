@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Fantasia Butterfly Co.</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<div class="container">
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#onlineshop">Online Shop</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+<div class="container">
+    <div id="home" class="textbox">
+        <h1>Fantasia Butterfly Co.</h1>
+        <h2>Cape Cod, MA</h2>
+        <h3>Making fantasies, reality.</h3>
+        <p>A father and daughter operated business. We make buttefly ornaments from real butterflies.</p>
+        <p>Place them in arrangements, potted plants, or where ever your heart desires.</p>
+        <p>Est. 2024</p>
+        <img src="Downloads/top_pic.JPEG" alt="Photo of butterfly ornament." class="front-photo">
+    </div>
+
+    <div id="aboutus" class="textbox">
+            <h1>About Us</h1>
+            <img src="Downloads/plymouth_photo.JPEG" alt="Photo of founder and junior-direcor." class="resized-photo">
+            <p>Started by father and daughter, business partners, and best friends, Fantasia Butterfly Company metamorphosizsed from what was just an idea.
+               We operate out of the coastal peninusula of Cape Cod, observing the sun dipping below the horizon in our free time. 
+               We specialize in the art of spreading and preserving visually captivating specimens, transforming mother
+               nature's beauty into timeless displays and bringing them into your living space. Thank you for supporting us.</p>
+        </div> 
+
+    <div id="onlineshop" class="textbox">
+        <h1>Online Shop</h1>
+        <img src="Downloads/onlinestore2.JPEG" alt="Butterfly Display" class="onlineshop">
+        <p>You can purchase butterflies from our Etsy page.</p>
+        <a href="https://www.fantasiabutterflyco.etsy.com" class="button">Visit Online Store</a>
+    </div>
+
+    <div id="gallery" class="textbox">
+        <h1>Gallery</h1>
+        <div class="slideshow-wrapper">
+            <button class="prev" onclick="scrollGallery(-1)">&#10094;</button>
+            <div class="scroll-container">
+              <img src="Downloads/gallery4.JPEG" class="gallery-item">
+              <img src="Downloads/gallery5.JPEG" class="gallery-item">
+              <img src="Downloads/gallery6.JPEG" class="gallery-item">
+              <img src="Downloads/gallery7.JPEG" class="gallery-item">
+              <img src="Downloads/hidden_face.JPEG" class="gallery-item">
+              <img src="Downloads/display.JPEG" class="gallery-item">
+              <img src="Downloads/gallery1.JPEG" class="gallery-item">
+              <img src="Downloads/gallery2.JPEG" class="gallery-item">
+              <img src="Downloads/simon.JPEG" class="gallery-item">
+              <img src="Downloads/simon2.JPEG" class="gallery-item">
+              <img src="Downloads/gallery4.JPEG" class="gallery-item">
+              <img src="Downloads/gallery3.JPEG" class="gallery-item">
+            </div>
+            <button class="next" onclick="scrollGallery(1)>&#10095;</button>
+        </div>
+    </div>
+<script>
+        function scrollGallery(direction) {
+            let container = document.querySelector(".scroll-container");
+            let scrollAmount = 200;
+
+            if (direction === 1) {
+                container.scrollLeft += scrollAmount;
+        } else {
+                container.scrollLeft -= scrollAmount;
+        }
+    }
+</script>
+</body>
+</html>
