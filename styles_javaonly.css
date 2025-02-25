@@ -1,0 +1,23 @@
+#butterfly {
+    position: absolute;
+    width: 100px;
+    pointer-events: none;
+}
+
+#gold_butterfly {
+    position: absolute;
+    width: 100px;
+    pointer-events: none;
+}
+
+#aqua_butterfly {
+    position: absolute;
+    width: 100px;
+    pointer-events: none;
+}
+
+#green_butterfly {
+    position: absolute;
+    width: 100px;
+    pointer-events: none;
+}

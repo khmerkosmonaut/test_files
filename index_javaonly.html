@@ -1,0 +1,80 @@
+    <img src="Downloads/plymouth_photo.JPEG" alt="Photo of founder and junior-direcor." class="resized-photo">
+    <img id="butterfly" src="Documents/butterfly.png" alt="Butterfly">
+    <img id="gold_butterfly" src="Documents/gold_butterfly.png" alt="Gold_Butterfly">
+    <img id="aqua_butterfly" src="Documents/aqua_butterfly.png" alt="Aqua_Butterfly">
+    <img id="green_butterfly" src="Documents/green_butterfly.png" alt="Green_Butterfly">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    gsap.to("#butterfly", {
+    x: () => gsap.utils.random(0, window.innerWidth - 50),
+    y: () => gsap.utils.random(0, window.innerHeight - 50),
+    rotation: () => gsap.utils.random(-30, 30),
+    repeat: -1,
+    duration: 5,
+    ease: "power1.inOut",
+    yoyo: true,
+    repeatRefresh: true
+});
+    gsap.to("#butterfly", {
+    scale: 1.1,
+    rotation: 10,
+    repeat: -1,
+    yoyo: true,
+    duration: 0.2,
+    ease: "power1.inOut"
+});
+    gsap.to("#gold_butterfly", {
+    x: () => gsap.utils.random(0, window.innerWidth - 50),
+    y: () => gsap.utils.random(0, window.innerHeight - 50),
+    rotation: () => gsap.utils.random(-30, 30),
+    repeat: -1,
+    duration: 5,
+    ease: "power1.inOut",
+    yoyo: true,
+    repeatRefresh: true
+});
+    gsap.to("#gold_butterfly", {
+    scale: 1.1,
+    rotation: 10,
+    repeat: -1,
+    yoyo: true,
+    duration: 0.2,
+    ease: "power1.inOut"
+})
+    gsap.to("#aqua_butterfly", {
+    x: () => gsap.utils.random(0, window.innerWidth - 50),
+    y: () => gsap.utils.random(0, window.innerHeight - 50),
+    rotation: () => gsap.utils.random(-30, 30),
+    repeat: -1,
+    duration: 5,
+    ease: "power1.inOut",
+    yoyo: true,
+    repeatRefresh: true
+});
+    gsap.to("#aqua_butterfly", {
+    scale: 1.1,
+    rotation: 10,
+    repeat: -1,
+    yoyo: true,
+    duration: 0.2,
+    ease: "power1.inOut"
+})
+    gsap.to("#green_butterfly", {
+    x: () => gsap.utils.random(0, window.innerWidth - 50),
+    y: () => gsap.utils.random(0, window.innerHeight - 50),
+    rotation: () => gsap.utils.random(-30, 30),
+    repeat: -1,
+    duration: 5,
+    ease: "power1.inOut",
+    yoyo: true,
+    repeatRefresh: true
+});
+    gsap.to("#green_butterfly", {
+    scale: 1.1,
+    rotation: 10,
+    repeat: -1,
+    yoyo: true,
+    duration: 0.2,
+    ease: "power1.inOut"
+})
+</script> 
